@@ -484,10 +484,11 @@
       return this.indexOf(s) == 0;
    }
 
+   // 初始化状态设置
    var term = Object.create(Terminal);
    term.init(CONFIG, '/json/sample.json', COMMANDS, function() {
       term.enqueue('login')
-          .enqueue('clark')
+          .enqueue('weilong wang')
           .enqueue('******')
           .enqueue('cat file1')
           .enqueue('help')

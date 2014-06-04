@@ -1,4 +1,5 @@
 // Copyright 2013 Clark DuVall
+// Edit 2014 wlwang
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -196,11 +197,11 @@ COMMANDS.help = function(argv, cb) {
    this._terminal.write(
        'You can navigate either by clicking on anything that ' +
        '<a href="javascript:void(0)">underlines</a> when you put your mouse ' +
-       'over it, or by typing commands in the terminal. Type the name of a ' +
-       '<span class="exec">link</span> to view it. Use "cd" to change into a ' +
-       '<span class="dir">directory</span>, or use "ls" to list the contents ' +
-       'of that directory. The contents of a <span class="text">file</span> ' +
-       'can be viewed using "cat". <span class="img">Images</span> are ' +
+       'over it, or by typing commands in the terminal.<br />Type the name of a ' +
+       '<span class="exec">link</span> or just click the file to view it.<br />Use "cd" to change into a ' +
+       '<span class="dir">directory</span>,<br />or use "ls" to list the contents ' +
+       'of that directory.<br />The contents of a <span class="text">file</span> ' +
+       'can be viewed using "cat".<br /><span class="img">Images</span> are ' +
        'displayed using "gimp".<br><br>If there is a command you want to get ' +
        'out of, press Ctrl+C or Ctrl+D.<br><br>');
    this._terminal.write('Commands are:<br>');
