@@ -1,0 +1,84 @@
+{
+    "type": "dir", 
+    "name": "~", 
+    "contents": [
+        {
+            "type": "dir", 
+            "name": "images", 
+            "contents": [
+                {
+                    "type": "img", 
+                    "name": "dogs.gif", 
+                    "contents": "/images/dogs.gif"
+                }, 
+                {
+                    "type": "img", 
+                    "name": "future_me.jpg", 
+                    "contents": "/images/future_me.jpg"
+                }, 
+                {
+                    "type": "img", 
+                    "name": "real_me.jpg", 
+                    "contents": "/images/real_me.jpg"
+                }, 
+                {
+                    "type": "img", 
+                    "name": "suck_me.gif", 
+                    "contents": "/images/suck_me.gif"
+                }
+            ]
+        }, 
+        {
+            "type": "dir", 
+            "name": "projects", 
+            "contents": [
+                {
+                    "type": "dir", 
+                    "name": "inner_service", 
+                    "contents": [
+                        {
+                            "type": "text", 
+                            "name": "daily_report", 
+                            "contents": ""
+                        }, 
+                        {
+                            "type": "text", 
+                            "name": "kibana", 
+                            "contents": ""
+                        }, 
+                        {
+                            "type": "text", 
+                            "name": "sentry", 
+                            "contents": ""
+                        }
+                    ]
+                }, 
+                {
+                    "type": "text", 
+                    "name": "kuaizhan", 
+                    "contents": ""
+                }, 
+                {
+                    "type": "text", 
+                    "name": "quanzi", 
+                    "contents": "My first project in sohu -> <span class=\"exec\"><a href=\"http://quan.sohu.com\" target=\"_blank\">Quanzi</a></span>.\nInspird By <span class=\"exec\"><a href=\"http://www.reddit.com\" target=\"_blank\">Reddit</a></span>, we want to build our own reddit.\nThe order of topics is totally depends on user's action.(such as comment count like count dislike count ..)\nThe user can just view their favourite topics by joining the specific 'quanzi'.\nWe build a system(Naive Bayes and log the user's passing rate) that can filter the bad topics automatically.\n"
+                }, 
+                {
+                    "type": "text", 
+                    "name": "smart_route", 
+                    "contents": ""
+                }, 
+                {
+                    "type": "text", 
+                    "name": "TVQuan", 
+                    "contents": ""
+                }
+            ]
+        }, 
+        {
+            "type": "text", 
+            "name": "README", 
+            "contents": "WARNING: Sorry for writing all in English!\nBecause of writing the website code and the my personal info at the same time, i don't want to change the input method.\nYes, i am a lazy person. orz.\n\nHello World!\nThis is an intro about me.\n---------------------------------------------------------\n| Name        | Weilong Wang(crow/wlwang/Raven Lung)    |\n---------------------------------------------------------\n| Age&Gender  | 22 years old yellow male                |\n---------------------------------------------------------\n| Education   | Bachelor Degree From Hust CS(2009-2013) |\n---------------------------------------------------------\n| Last work   | Developer in Sohu                       |\n---------------------------------------------------------\n| Blog        | http://wlwang41.github.io/              |\n---------------------------------------------------------\n| Email       | wlwang41@gmail.com                      |\n---------------------------------------------------------\n| Phone       | 18612301294 (hate to expose it)         |\n---------------------------------------------------------\n\n"
+        }
+    ]
+}
