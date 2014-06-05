@@ -1,6 +1,7 @@
 # jsterm
+> i just fork jsterm from [here](https://github.com/clarkduvall/jsterm) and make some changes.
+
 jsterm is a terminal simulator that uses a JSON filesystem. To see it in use,
-check out [clarkduvall.com](http://clarkduvall.com).
 
 ## Disclaimer
 Most of this was written awhile ago when I knew JavaScript about as well as I
