@@ -38,40 +38,40 @@
                     "contents": [
                         {
                             "type": "text", 
-                            "name": "daily_report", 
-                            "contents": ""
-                        }, 
-                        {
-                            "type": "text", 
                             "name": "kibana", 
-                            "contents": ""
+                            "contents": "We use kibana to analyze and visualize the nginx logs.\nIt use logstash to post and receive the logs, and elasticsearch to do the searching things.\nAnd it provides a very nice web dashboard.\n"
                         }, 
                         {
                             "type": "text", 
                             "name": "sentry", 
-                            "contents": ""
+                            "contents": "I use sentry to gather our applications exceptions.\nSentry is actually a django project, everyone can build this.\nBut its document is just like a shit, you can taste it if you don't believe me.\nSentry uses postgres to save all the exceptions. And you should use raven as your client. Raven supports many languages, and it is really easy to use.\n"
+                        }, 
+                        {
+                            "type": "text", 
+                            "name": "warning_report", 
+                            "contents": "We build a system to send daily report email about the kuaizhan's data.\nI make the frontend job.\n<hr />\nAnd i write some scripts that will send emails to all developers if the projects has some big problems.\nSuch as:\n<img src=\"http://ww4.sinaimg.cn/large/91f9ff14tw1eh3ocrxvpoj20pu0ch75g.jpg\" />\n<br />\n<img src=\"http://ww3.sinaimg.cn/large/91f9ff14tw1eh3oeof4psj20ol0cvdh2.jpg\" />\n<br />\n<img src=\"http://ww2.sinaimg.cn/large/91f9ff14tw1eh3ogfynbcj20oh0d2dh3.jpg\" />\n"
                         }
                     ]
                 }, 
                 {
                     "type": "text", 
                     "name": "kuaizhan", 
-                    "contents": ""
+                    "contents": "I am doing this project right now.\nHere is the <span class=\"exec\"><a href=\"http://www.kuaizhan.com\" target=\"_blank\">link</a></span>.\nKuaizhan is a tool for all people to build their own wap and apps.\nMy job is building the components and plugins for it and build a system to handler the exceptions online.\n"
                 }, 
                 {
                     "type": "text", 
                     "name": "quanzi", 
-                    "contents": "My first project in sohu -> <span class=\"exec\"><a href=\"http://quan.sohu.com\" target=\"_blank\">Quanzi</a></span>.\nInspird By <span class=\"exec\"><a href=\"http://www.reddit.com\" target=\"_blank\">Reddit</a></span>, we want to build our own reddit.\nThe order of topics is totally depends on user's action.(such as comment count like count dislike count ..)\nThe user can just view their favourite topics by joining the specific 'quanzi'.\nWe build a system(Naive Bayes and log the user's passing rate) that can filter the bad topics automatically.\n"
+                    "contents": "My first project in sohu -> <span class=\"exec\"><a href=\"http://quan.sohu.com\" target=\"_blank\">Quanzi</a></span>.\nInspird By <span class=\"exec\"><a href=\"http://www.reddit.com\" target=\"_blank\">Reddit</a></span>, we want to build our own reddit.\nThe order of topics is totally depends on user's action.(such as comment count like count dislike count ..)\nThe user can just view their favourite topics by joining the specific 'quanzi' (like douban group).\nWe build a system(Naive Bayes and log the user's passing rate) that can filter the bad topics automatically.\nExcept that, we also has a manage system to audit all the topics and do all admin operations.\n<hr />\nWe use pure python to build the project.\nOur database is mongodb(original one is cassandra, but cassandra counter is just a shit, mongodb's counter is a shit too).\nWe use mongokit as the orm/driver(pymongo), it provides document structure and some validator, but it turns out that mongokit is not as good as we expected.\nWe use redis as the cache, and we put the Bayes's sample into it. We also use redis to build our tag search and user notification. Yes we use redis to do a lot of things.\nOur web server is tornado, it handles the async requests pretty well, but it has the memory leak problem(slowly). So we restart our tornado process every week.\nWe use nginx to do the proxy pass and loading balance. We have 6 versions online and we can change between 6 versions within a blink(just one fabric command and no waiting).\nOur backend just give the json data, page rendering is the node.js's bussiness.Yes, we use node to render the template. But we also use backbone to do the frontend MVC thing.\nFinally, we use sentry to gather all online exceptions, sphinx to write the docs and fabric to do the deployment.\n"
                 }, 
                 {
                     "type": "text", 
-                    "name": "smart_route", 
-                    "contents": ""
+                    "name": "smart_router", 
+                    "contents": "This is a project from the hackathon.\nWe use raspberry pi to build a smarter router.\nThe route contains the monitor system, it means that it will capture the picture of the house and if someone breaks into the house, it will send a email to you.\nAnd we build OwnCloud on it, so it will be the private cloud service.\nWe use hostapd isc-dhcp-server and  iptables to do the route things.\nFinally, if other people wants to use your router, they should download the specific apps to get the verification code. Maybe this is one way to popularize your apps.\n"
                 }, 
                 {
                     "type": "text", 
                     "name": "TVQuan", 
-                    "contents": ""
+                    "contents": "This is an android project and can download <span class=\"exec\"><a href=\"http://as.baidu.com/a/item?docid=5519351&pre=web_am_se\" target=\"_blank\">here</a></span>.\nI used to write android projects in school, but right now,\nSystem.out.println(\"i hate to use Java.\");\n"
                 }
             ]
         }, 
