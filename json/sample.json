@@ -5,7 +5,7 @@
       {
          "name": "file1",
          "type": "text",
-         "contents": "Hello World!",
+         "contents": "Hello World!<br><img src='/images/penguin.png' />",
          "description": "FOOO"
       },
       {
