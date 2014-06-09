@@ -43,6 +43,11 @@
                         }, 
                         {
                             "type": "text", 
+                            "name": "scorer", 
+                            "contents": "This is a system that will record the coins and reputation.\n\n"
+                        }, 
+                        {
+                            "type": "text", 
                             "name": "sentry", 
                             "contents": "I use sentry to gather our applications exceptions.\nSentry is actually a django project, everyone can build this.\nBut its document is just like a shit, you can taste it if you don't believe me.\nSentry uses postgres to save all the exceptions. And you should use raven as your client. Raven supports many languages, and it is really easy to use.\n"
                         }, 
