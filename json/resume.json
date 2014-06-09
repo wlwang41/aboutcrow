@@ -33,6 +33,12 @@
             "name": "projects", 
             "contents": [
                 {
+                    "name": "TUTORIAL",
+                    "type": "exec",
+                    "contents": "http://socrowhu.herokuapp.com",
+                    "description": "This is more readable one."
+                },
+                {
                     "type": "dir", 
                     "name": "inner_service", 
                     "contents": [
