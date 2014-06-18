@@ -1,0 +1,95 @@
+{
+    "type": "dir", 
+    "name": "~", 
+    "contents": [
+        {
+            "type": "dir", 
+            "name": "images", 
+            "contents": [
+                {
+                    "type": "img", 
+                    "name": "dogs.gif", 
+                    "contents": "/images/dogs.gif"
+                }, 
+                {
+                    "type": "img", 
+                    "name": "future_me.jpg", 
+                    "contents": "/images/future_me.jpg"
+                }, 
+                {
+                    "type": "img", 
+                    "name": "real_me.jpg", 
+                    "contents": "/images/real_me.jpg"
+                }, 
+                {
+                    "type": "img", 
+                    "name": "suck_me.gif", 
+                    "contents": "/images/suck_me.gif"
+                }
+            ]
+        }, 
+        {
+            "type": "dir", 
+            "name": "projects", 
+            "contents": [
+                {
+                    "name": "TUTORIAL",
+                    "type": "exec",
+                    "contents": "http://socrowhu.herokuapp.com",
+                    "description": "This is more readable one."
+                },
+                {
+                    "type": "dir", 
+                    "name": "inner_service", 
+                    "contents": [
+                        {
+                            "type": "text", 
+                            "name": "kibana", 
+                            "contents": "We use kibana to analyze and visualize the nginx logs.\nIt use logstash to post and receive the logs, and elasticsearch to do the searching things.\nAnd it provides a very nice web dashboard.\n"
+                        }, 
+                        {
+                            "type": "text", 
+                            "name": "scorer", 
+                            "contents": "This is a system that will record the coins and reputation.\n\n"
+                        }, 
+                        {
+                            "type": "text", 
+                            "name": "sentry", 
+                            "contents": "I use sentry to gather our applications exceptions.\nSentry is actually a django project, everyone can build this.\nBut its document is just like a shit, you can taste it if you don't believe me.\nSentry uses postgres to save all the exceptions. And you should use raven as your client. Raven supports many languages, and it is really easy to use.\n"
+                        }, 
+                        {
+                            "type": "text", 
+                            "name": "warning_report", 
+                            "contents": "We build a system to send daily report email about the kuaizhan's data.\nI make the frontend job.\n<hr />\nAnd i write some scripts that will send emails to all developers if the projects has some big problems.\nSuch as:\n<img src=\"http://ww4.sinaimg.cn/large/91f9ff14tw1eh3ocrxvpoj20pu0ch75g.jpg\" />\n<br />\n<img src=\"http://ww3.sinaimg.cn/large/91f9ff14tw1eh3oeof4psj20ol0cvdh2.jpg\" />\n<br />\n<img src=\"http://ww2.sinaimg.cn/large/91f9ff14tw1eh3ogfynbcj20oh0d2dh3.jpg\" />\n"
+                        }
+                    ]
+                }, 
+                {
+                    "type": "text", 
+                    "name": "kuaizhan", 
+                    "contents": "I am doing this project right now.\nHere is the <span class=\"exec\"><a href=\"http://www.kuaizhan.com\" target=\"_blank\">link</a></span>.\nKuaizhan is a tool for all people to build their own wap and apps.\nMy job is building the components and plugins for it and build a system to handler the exceptions online.\n"
+                }, 
+                {
+                    "type": "text", 
+                    "name": "quanzi", 
+                    "contents": "My first project in sohu -> <span class=\"exec\"><a href=\"http://quan.sohu.com\" target=\"_blank\">Quanzi</a></span>.\nInspird By <span class=\"exec\"><a href=\"http://www.reddit.com\" target=\"_blank\">Reddit</a></span>, we want to build our own reddit.\nThe order of topics is totally depends on user's action.(such as comment count like count dislike count ..)\nThe user can just view their favourite topics by joining the specific 'quanzi' (like douban group).\nWe build a system(Naive Bayes and log the user's passing rate) that can filter the bad topics automatically.\nExcept that, we also has a manage system to audit all the topics and do all admin operations.\n<hr />\nWe use pure python to build the project.\nOur database is mongodb(original one is cassandra, but cassandra counter is just a shit, mongodb's counter is a shit too).\nWe use mongokit as the orm/driver(pymongo), it provides document structure and some validator, but it turns out that mongokit is not as good as we expected.\nWe use redis as the cache, and we put the Bayes's sample into it. We also use redis to build our tag search and user notification. Yes we use redis to do a lot of things.\nOur web server is tornado, it handles the async requests pretty well, but it has the memory leak problem(slowly). So we restart our tornado process every week.\nWe use nginx to do the proxy pass and loading balance. We have 6 versions online and we can change between 6 versions within a blink(just one fabric command and no waiting).\nOur backend just give the json data, page rendering is the node.js's bussiness.Yes, we use node to render the template. But we also use backbone to do the frontend MVC thing.\nFinally, we use sentry to gather all online exceptions, sphinx to write the docs and fabric to do the deployment.\n"
+                }, 
+                {
+                    "type": "text", 
+                    "name": "smart_router", 
+                    "contents": "This is a project from the hackathon.\nWe use raspberry pi to build a smarter router.\nThe route contains the monitor system, it means that it will capture the picture of the house and if someone breaks into the house, it will send a email to you.\nAnd we build OwnCloud on it, so it will be the private cloud service.\nWe use hostapd isc-dhcp-server and  iptables to do the route things.\nFinally, if other people wants to use your router, they should download the specific apps to get the verification code. Maybe this is one way to popularize your apps.\n"
+                }, 
+                {
+                    "type": "text", 
+                    "name": "TVQuan", 
+                    "contents": "This is an android project and can download <span class=\"exec\"><a href=\"http://as.baidu.com/a/item?docid=5519351&pre=web_am_se\" target=\"_blank\">here</a></span>.\nI used to write android projects in school, but right now,\nSystem.out.println(\"i hate to use Java.\");\n"
+                }
+            ]
+        }, 
+        {
+            "type": "text", 
+            "name": "README", 
+            "contents": "WARNING: Sorry for writing all in English!\nBecause of writing the website code and the my personal info at the same time, i don't want to change the input method.\nYes, i am a lazy person. orz.\n\nHello World!\nThis is an intro about me.\n---------------------------------------------------------\n| Name        | Weilong Wang(crow/wlwang/Raven Lung)    |\n---------------------------------------------------------\n| Age&Gender  | 22 years old yellow male                |\n---------------------------------------------------------\n| Education   | Bachelor Degree From Hust CS(2009-2013) |\n---------------------------------------------------------\n| Last work   | Developer in Sohu                       |\n---------------------------------------------------------\n| Blog        | http://wlwang41.github.io/              |\n---------------------------------------------------------\n| Email       | wlwang41@gmail.com                      |\n---------------------------------------------------------\n| Phone       | 18612301294 (hate to expose it)         |\n---------------------------------------------------------\n\n"
+        }
+    ]
+}
