@@ -490,7 +490,7 @@
       term.enqueue('login')
           .enqueue('weilong wang')
           .enqueue('******')
-          .enqueue('cat README')
+          .enqueue('whoami')
           .enqueue('help')
           .enqueue('ls -l')
           .enqueue('tree')
