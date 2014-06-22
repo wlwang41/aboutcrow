@@ -15,6 +15,13 @@
 
 var COMMANDS = COMMANDS || {};
 
+COMMANDS.whoami = function(argv, cb) {
+    var term = this._terminal;
+    var entry = this._terminal.getEntry("README");
+    term.write(entry.contents);
+    cb();
+}
+
 COMMANDS.cat =  function(argv, cb) {
    var filenames = this._terminal.parseArgs(argv).filenames,
        stdout;
@@ -210,4 +217,19 @@ COMMANDS.help = function(argv, cb) {
          this._terminal.write(c + '  ');
    }
    cb();
+}
+
+COMMANDS.sendmail = function(argv, cb) {
+    var term = this._terminal;
+
+    var email = "wlwang41@gmail.com"; 
+    var subject = ""; 
+    var body_message = ""; 
+    
+    var mail_link = 'mailto:'+email+'?subject='+subject+'&body='+body_message; 
+
+    window.location.href=mail_link;
+    
+    term.write("Done");
+    cb();
 }
