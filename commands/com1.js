@@ -222,14 +222,14 @@ COMMANDS.help = function(argv, cb) {
 COMMANDS.sendmail = function(argv, cb) {
     var term = this._terminal;
 
-    var email = "wlwang41@gmail.com"; 
-    var subject = ""; 
-    var body_message = ""; 
-    
-    var mail_link = 'mailto:'+email+'?subject='+subject+'&body='+body_message; 
+    var email = "wlwang41@gmail.com";
+    var subject = "";
+    var body_message = "";
+
+    var mail_link = 'mailto:'+email+'?subject='+subject+'&body='+body_message;
 
     window.location.href=mail_link;
-    
+
     term.write("Done");
     cb();
 }
